@@ -1,6 +1,6 @@
 # React Quiz
 
-build upon https://github.com/mitchgavan/react-multi-choice-quiz
+build upon https://github.com/mitchgavan/react-multi-choice-quiz, an enhancement is on https://github.com/E7-87-83/basic-law-and-national-security-law-test
 
 ## To run and test the app
 ```bash
