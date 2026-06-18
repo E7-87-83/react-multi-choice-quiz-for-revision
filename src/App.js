@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
-import logo from './svg/logo.svg';
+import basicDetail from './basicDetail.json';
 import './App.css';
 
 class App extends Component {
@@ -113,15 +113,15 @@ class App extends Component {
   }
 
   renderResult() {
-    return <Result quizResult={this.state.correctCount} />;
+    return <Result quizResult={this.state.correctCount} questionTotal={quizQuestions.length}/>;
   }
 
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>香港基本法及國安法溫習工具 v0.01.0</h2>
+          <a href={basicDetail.sitePath}><img src={basicDetail.logoAbsPath} className="App-logo" alt="logo" /></a>
+          <h2>{basicDetail.title}</h2>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
