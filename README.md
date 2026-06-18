@@ -35,6 +35,6 @@ npx parcel build index.html --no-content-hash
 ```
 
 5. Edit `./dist/index.html`
-+ change the `.css`, `.ico` to a relative path
++ change the `.css`, `.ico`, etc. to a relative path
 
 6. Put the `./dist` folder to a static HTML hosting
